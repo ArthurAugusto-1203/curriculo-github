@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contato | Arthur Augusto de Carvalho Oliveira</title>
+
+    <style>
+        /* Mesmas cores do index.html (claro e escuro) */
+        :root {
+            --fundo: #f7f6f2;
+            --texto: #1c2430;
+            --texto-suave: #556070;
+            --destaque: #0b6e6e;
+            --linha: #d9d6cc;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --fundo: #12181f;
+                --texto: #e8eaed;
+                --texto-suave: #9aa5b1;
+                --destaque: #4fc3c3;
+                --linha: #2b3541;
+            }
+        }
+
+        * { box-sizing: border-box; }
+
+        body {
+            margin: 0;
+            background: var(--fundo);
+            color: var(--texto);
+            font-family: "Segoe UI", system-ui, -apple-system, Arial, sans-serif;
+            line-height: 1.65;
+        }
+
+        main {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 56px 24px 72px;
+        }
+
+        a { color: var(--destaque); }
+        a:focus-visible { outline: 3px solid var(--destaque); outline-offset: 3px; }
+
+        h1 {
+            margin: 0 0 4px;
+            font-size: clamp(1.9rem, 5vw, 2.6rem);
+            line-height: 1.15;
+            letter-spacing: -0.02em;
+        }
+
+        .subtitulo {
+            margin: 0 0 32px;
+            font-size: 1.1rem;
+            color: var(--texto-suave);
+            max-width: 65ch;
+        }
+
+        /* Lista de formas de contato */
+        .contatos {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            border-top: 1px solid var(--linha);
+        }
+
+        .contatos li {
+            padding: 18px 0;
+            border-bottom: 1px solid var(--linha);
+        }
+
+        .contatos .rotulo {
+            display: block;
+            font-size: 0.95rem;
+            color: var(--texto-suave);
+        }
+
+        .contatos a {
+            font-size: 1.1rem;
+            font-weight: 600;
+            overflow-wrap: anywhere;
+        }
+
+        .voltar {
+            display: inline-block;
+            margin-top: 36px;
+            padding: 8px 18px;
+            border: 2px solid var(--destaque);
+            border-radius: 6px;
+            font-weight: 600;
+            text-decoration: none;
+        }
+
+        .voltar:hover { background: var(--destaque); color: var(--fundo); }
+    </style>
+</head>
+
+<body>
+<main>
+
+    <h1>Contato</h1>
+    <p class="subtitulo">
+        Estou em busca de oportunidades como auxiliar em áreas da TI.
+        Fale comigo por um dos canais abaixo.
+    </p>
+
+    <ul class="contatos">
+        <li>
+            <span class="rotulo">E-mail</span>
+            <a href="mailto:arthuraugustodecarvalho59@gmail.com">arthuraugustodecarvalho59@gmail.com</a>
+        </li>
+        <li>
+            <span class="rotulo">LinkedIn</span>
+            <a href="https://www.linkedin.com/in/arthur-augusto-de-carvalho-oliveira-1138a0312"
+               target="_blank" rel="noopener noreferrer">Arthur Augusto de Carvalho Oliveira</a>
+        </li>
+        <li>
+            <span class="rotulo">Localização</span>
+            Betim, Minas Gerais
+        </li>
+    </ul>
+
+    <a class="voltar" href="index.html">Voltar ao currículo</a>
+
+</main>
+</body>
+</html>
